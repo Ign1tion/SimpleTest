@@ -10,7 +10,7 @@ public class SimpleTest {
     MainPage mainPage = new MainPage();
 @Test
     public void searchValue(){
-    Configuration.browser = "chrome";
+    Configuration.browser = "firefox";
     open("https://www.google.com/");
     mainPage.searchText();
     assert $(By.className("VuuXrf")).isDisplayed();
