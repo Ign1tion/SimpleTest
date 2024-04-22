@@ -10,7 +10,7 @@ public class SimpleTest {
     MainPage mainPage = new MainPage();
 @Test
     public void searchValue(){
-    //Configuration.headless = true;
+    Configuration.headless = true;
     Configuration.browser = "chrome";
     open("https://www.google.com/");
     mainPage.searchText();
